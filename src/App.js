@@ -1,9 +1,9 @@
-import './App.css';
-import Todo from './TodoApp/Todo';
+import "./App.css";
+import Todo from "./TodoApp/Todo";
 function App() {
   return (
     <div className="App">
-     <Todo/>
+      <Todo />
     </div>
   );
 }

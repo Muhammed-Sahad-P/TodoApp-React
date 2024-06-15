@@ -1,10 +1,75 @@
-.Todocon{
-    background-color: black;
-    width: 70vw;
-    margin: 5em auto;
+.Todocon {
+  background-color: rgb(0, 203, 44);
+  width: 70vw;
+  margin: 5em auto;
+  border-radius: 10px;
+  font-size: 30px;
 }
 
-.header{
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
+.header {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+.tasks {
+  color: white;
+}
+.addtsk {
+  color: white;
+}
+
+.input-container {
+  background: rgb(0, 203, 44);
+  padding: 0.5em;
+  border-radius: 10px;
+  border: 1px solid skyblue;
+}
+
+.input {
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  border: 1px;
+  border-radius: 1em;
+  padding: 0.5em;
+  margin: 1em;
+  width: 80%;
+}
+
+.Addbtn {
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 2px;
+  padding: 0px 15px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  background-color: greenyellow;
+}
+
+.listtask{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    font-size: 1em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dltbtn{
+    color: black;
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2px;
+    padding: 0px 15px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
 }

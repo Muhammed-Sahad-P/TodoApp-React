@@ -1,9 +1,21 @@
-import React from 'react'
+import React from "react";
 
-const List = () => {
+const List = ({ task, index, removeTask }) => {
   return (
-    <div>List</div>
-  )
-}
+    <>
+      <div className="listtask">
+        {task.title}
+        <button
+          onClick={() => {
+            removeTask(index);
+          }}
+          className="dltbtn"
+        >
+          Delete
+        </button>
+      </div>
+    </>
+  );
+};
 
-export default List
+export default List;
