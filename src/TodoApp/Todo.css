@@ -1,0 +1,10 @@
+.Todocon{
+    background-color: black;
+    width: 70vw;
+    margin: 5em auto;
+}
+
+.header{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
