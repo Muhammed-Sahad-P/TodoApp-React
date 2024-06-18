@@ -4,8 +4,12 @@ const Addtask = ({ addTask }) => {
   const [value, setValue] = useState("");
 
   const addItem = () => {
-    addTask(value);
-    setValue("");
+    if (value.trim() !== "") {
+      addTask(value);
+      setValue("");
+    } else {
+      alert("Please enter a task!");
+    }
   };
   return (
     <div className="input-container">

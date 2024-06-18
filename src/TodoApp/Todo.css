@@ -1,75 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color:rgb(153,153,153);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
 .Todocon {
   background-color: rgb(0, 203, 44);
   width: 70vw;
+  max-width: 600px;
   margin: 5em auto;
   border-radius: 10px;
-  font-size: 30px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header {
   font-family: "Courier New", Courier, monospace;
   color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
 }
+
 .tasks {
   color: white;
+  list-style-type: none;
+  padding: 0;
 }
+
 .addtsk {
-  color: white;
+  margin-bottom: 20px;
+  
 }
 
 .input-container {
+  display: flex;
+  align-items: center;
   background: rgb(0, 203, 44);
   padding: 0.5em;
   border-radius: 10px;
-  border: 1px solid skyblue;
+  border: 1px solid rgb(0, 0, 0);
 }
 
-.input {
+.input-container input[type="text"] {
+  flex: 1;
   font-size: 1em;
   font-weight: bold;
   color: black;
   background-color: white;
-  border: 1px;
+  border: 1px solid #ddd;
   border-radius: 1em;
   padding: 0.5em;
-  margin: 1em;
-  width: 80%;
+  margin-right: 0.5em;
 }
 
 .Addbtn {
   border-radius: 5px;
   font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 2px;
-  padding: 0px 15px;
+  padding: 0.5em 1em;
   border: none;
   cursor: pointer;
   color: black;
   background-color: greenyellow;
+  transition: background-color 0.3s ease;
 }
 
-.listtask{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: black;
-    font-size: 1em;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+.Addbtn:hover {
+  background-color: limegreen;
 }
 
-.dltbtn{
-    color: black;
-    background-color: aqua;
-    border-radius: 5px;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 2px;
-    padding: 0px 15px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-
+.listtask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
+
+.dltbtn {
+  color: black;
+  background-color: rgb(122, 159, 159);
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dltbtn:hover {
+  background-color: rgb(153, 31, 31);
+} 
+
+
+
